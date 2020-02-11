@@ -1,0 +1,29 @@
+.forms{
+height: 800px;
+background-image: url('../img/bg-price.svg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding: 8rem 4rem;
+margin-bottom: 1rem;
+}
+
+.Free{
+  border:2px solid black;
+  height: 400px;
+  weight: 400px;
+  background-color: White;
+}
+
+.Premium{
+  border:2px solid black;
+  height: 400px;
+  weight: 400px;
+  background-color: $White;
+}
+
+.button3{
+text-align: center;
+background-color: $BaliBlue;
+color: $White;
+}
