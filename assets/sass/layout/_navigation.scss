@@ -1,17 +1,25 @@
 .navegador{
  display: inline-block;
- text-align: right;
  list-style: none;
  padding-top: 2%;
+ gap: 10px;
 }
 
 .navegador li, a{
   text-decoration: none;
   display: inline-block;
+  text-align: left;
 }
 
+.botones{
+    text-align: right;
+    padding-right: 15%;
+}
+
+
 .button1{
-  background-color: $White;
+  background-color: White;
+  border-color: white;
 }
 .button2{
   background-color: $BaliBlue;
@@ -22,10 +30,4 @@
   text-decoration: none;
   display: inline-block;
   color: $RaisingBlack;
-}
-
-.Caja1{
-  height: 150px;
-  weight: 150px;
-  border: 2px solid red;
 }

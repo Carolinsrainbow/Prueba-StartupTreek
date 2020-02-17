@@ -2,13 +2,16 @@ h1{
   text-align: left;
 }
 
+h2{
+  display: grid;
+  grid-template: 1fr;
+  background-color: yellow;
+  justify-content: center;
+  padding-bottom: 5%;
+}
 
 p{
   text-align: left;
-}
-
-h2{
-    justify-content: center;
 }
 
 h3,h4{

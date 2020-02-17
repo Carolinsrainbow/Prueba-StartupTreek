@@ -1,18 +1,17 @@
-body {
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
 h1 {
   text-align: left;
 }
 
-p {
-  text-align: left;
+h2 {
+  display: grid;
+  grid-template: 1fr;
+  background-color: yellow;
+  justify-content: center;
+  padding-bottom: 5%;
 }
 
-h2 {
-  justify-content: center;
+p {
+  text-align: left;
 }
 
 h3, h4 {
@@ -21,18 +20,25 @@ h3, h4 {
 
 .navegador {
   display: inline-block;
-  text-align: right;
   list-style: none;
   padding-top: 2%;
+  gap: 10px;
 }
 
 .navegador li, a {
   text-decoration: none;
   display: inline-block;
+  text-align: left;
+}
+
+.botones {
+  text-align: right;
+  padding-right: 15%;
 }
 
 .button1 {
-  background-color: #FFF;
+  background-color: White;
+  border-color: white;
 }
 
 .button2 {
@@ -46,20 +52,24 @@ h3, h4 {
   color: #221D23;
 }
 
-.Caja1 {
-  height: 150px;
-  weight: 150px;
-  border: 2px solid red;
-}
-
 .forms {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
+.grafico {
+  text-align: right;
+}
+
+@media screen and (max-width: 576px) {
+  .forms {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .header {
   height: 800px;
   background-image: url("../img/bg-hero.png");
@@ -70,19 +80,35 @@ h3, h4 {
   margin-bottom: 1rem;
 }
 
+.Caja1 {
+  width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+  .Caja1 {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #221D23;
-  width: auto;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 15%;
 }
 
-li {
+h5 {
+  padding: 5%;
   color: #726f73;
+  color: #E8E8E8;
 }
 
-.footer li, a {
-  text-decoration: none;
-  display: inline-block;
-  color: #E8E8E8;
+h5 .far {
+  flex: 1 1 1 100px;
+  align-self: flex-end;
 }
 
 .forms {
@@ -91,28 +117,44 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 8rem 4rem;
-  margin-bottom: 1rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 20rem;
 }
 
 .Free {
   border: 2px solid black;
-  height: 400px;
-  weight: 400px;
-  background-color: White;
+  height: 450px;
+  background-color: #FFF;
 }
 
 .Premium {
   border: 2px solid black;
-  height: 400px;
-  weight: 400px;
+  height: 450px;
   background-color: #FFF;
 }
 
 .button3 {
-  text-align: center;
+  width: 5rem;
   background-color: #2AB7CA;
   color: #FFF;
+}
+
+.col-sm-6 h3, p {
+  padding-right: 10rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .forms {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 6rem;
+    padding: 3rem;
+  }
+  .forms .grafico {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

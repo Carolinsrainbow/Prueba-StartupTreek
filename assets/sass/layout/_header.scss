@@ -7,3 +7,13 @@
   padding: 8rem 4rem;
   margin-bottom: 1rem;
 }
+
+.Caja1{
+width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+  .Caja1{
+    width: 100%;
+}
+}
