@@ -1,0 +1,19 @@
+.header{
+  height: 800px;
+  background-image: url('../img/bg-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 4rem;
+  margin-bottom: 1rem;
+}
+
+.Caja1{
+width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+  .Caja1{
+    width: 100%;
+}
+}

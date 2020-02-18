@@ -1,21 +1,20 @@
 h1 {
   text-align: left;
-}
-
-h2 {
-  display: grid;
-  grid-template: 1fr;
-  background-color: yellow;
-  justify-content: center;
-  padding-bottom: 5%;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
 }
 
 p {
   text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 }
 
-h3, h4 {
+h2, h3, h4 {
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 .navegador {
@@ -52,12 +51,20 @@ h3, h4 {
   color: #221D23;
 }
 
+h2 {
+  display: grid;
+  grid-template: 1fr;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
 .forms {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   padding-left: 30%;
   padding-right: 30%;
+  padding-bottom: 30%;
 }
 
 .grafico {
@@ -65,9 +72,22 @@ h3, h4 {
 }
 
 @media screen and (max-width: 576px) {
-  .forms {
+  .forms, .header, h1, h2, h3, h4, p {
     display: grid;
+    text-align: center;
     grid-template-columns: 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .grafico {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  h3, p {
+    text-align: center;
   }
 }
 .header {
@@ -91,7 +111,7 @@ h3, h4 {
 }
 .footer {
   background-color: #221D23;
-  height: 100px;
+  height: 10rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -106,11 +126,15 @@ h5 {
   color: #E8E8E8;
 }
 
-h5 .far {
-  flex: 1 1 1 100px;
-  align-self: flex-end;
+@media screen and (max-width: 576px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10rem;
+    padding-bottom: 30%;
+  }
 }
-
 .forms {
   height: 800px;
   background-image: url("../img/bg-price.svg");
@@ -135,7 +159,7 @@ h5 .far {
 }
 
 .button3 {
-  width: 5rem;
+  width: 8rem;
   background-color: #2AB7CA;
   color: #FFF;
 }
@@ -151,9 +175,7 @@ h5 .far {
     grid-template-columns: 1fr;
     height: 6rem;
     padding: 3rem;
-  }
-  .forms .grafico {
-    text-align: center;
+    height: 1000px;
   }
 }
 

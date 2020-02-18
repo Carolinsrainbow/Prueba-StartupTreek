@@ -1,0 +1,42 @@
+
+h2{
+  display: grid;
+  grid-template: 1fr;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.forms{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 30%;
+}
+
+.grafico{
+text-align: right;
+}
+
+@media screen and (max-width: 576px) {
+  .forms, .header, h1,h2,h3,h4,p{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grafico{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    h3,p{
+    text-align: center;
+  }
+}

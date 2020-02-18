@@ -1,0 +1,27 @@
+.footer{
+background-color: $RaisingBlack;
+height: 10rem;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+text-align: center;
+font-size: 3rem;
+padding-bottom: 15%;
+}
+
+
+h5{
+  padding: 5%;
+  color: $Nickel;
+  color: $Platinium;
+}
+
+@media screen and (max-width: 576px){
+  .footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 10rem;
+  padding-bottom: 30%;
+}
+}

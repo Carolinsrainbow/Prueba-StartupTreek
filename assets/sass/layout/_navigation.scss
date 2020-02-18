@@ -1,0 +1,33 @@
+.navegador{
+ display: inline-block;
+ list-style: none;
+ padding-top: 2%;
+ gap: 10px;
+}
+
+.navegador li, a{
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+}
+
+.botones{
+    text-align: right;
+    padding-right: 15%;
+}
+
+
+.button1{
+  background-color: White;
+  border-color: white;
+}
+.button2{
+  background-color: $BaliBlue;
+  color: $White;
+}
+
+.col-sm-6 a{
+  text-decoration: none;
+  display: inline-block;
+  color: $RaisingBlack;
+}
