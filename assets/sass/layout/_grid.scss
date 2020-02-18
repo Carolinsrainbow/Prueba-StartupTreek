@@ -20,7 +20,7 @@ text-align: right;
 }
 
 @media screen and (max-width: 576px) {
-  .forms, .header, h1,h2,h3,h4,p{
+  .forms, .header, h1,h2,h4{
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
@@ -36,7 +36,8 @@ text-align: right;
 }
 
 @media screen and (max-width: 576px) {
-    h3,p{
+    .forms h3,p{
     text-align: center;
+    width: 80%;
   }
 }
