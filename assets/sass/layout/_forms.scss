@@ -22,7 +22,7 @@
 }
 
 .button3{
-  width: 8rem;
+  width: 10rem;
   background-color: $BaliBlue;
   color: $White;
 }
@@ -32,11 +32,12 @@
   text-align: center;
 }
 
+
 @media screen and (max-width: 576px) {
   .forms{
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    height: 6rem;
     padding: 3rem;
     height: 1000px;
   }
